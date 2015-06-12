@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @title.name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @title.url %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @title.color %>
+</p>
+
+<p>
+  <strong>Logo:</strong>
+  <%= @title.logo %>
+</p>
+
+<%= link_to 'Edit', edit_title_path(@title) %> |
+<%= link_to 'Back', titles_path %>
