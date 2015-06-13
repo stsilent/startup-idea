@@ -23,9 +23,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
      text-align:center;
   }
   .cell a.name {
-     display:block;
-     font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-     color:#fff;  
+    display: block;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    padding: 20px;
+    font-size: 4vh;
+    text-decoration: none;
+    -webkit-transition:0.25s;
+    transition:0.25s;
+  }
+  .cell a.name:hover {
+     opacity:0.5;
+     background:none;  
   }
   .amp {
      color:#fff;
