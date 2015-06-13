@@ -18,7 +18,9 @@ class TitlesController < ApplicationController
 
   # GET /titles/new
   def new
-    @title = Title.new
+    #if current_user.try(:admin?)
+      @title = Title.new
+    #end
   end
 
   # GET /titles/1/edit
