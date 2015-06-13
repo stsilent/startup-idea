@@ -4,7 +4,7 @@
 	<% @titles.each do |title| %>
 	<div class="cell" style="background:<%= title.color %>">
 		<%= title.logo.html_safe %>
-		<%= title.name %>
+		<a class="name" href="<%= title.url %>" target="_blank"><%= title.name %></a>
 	</div>
 	<% end %>
 </div>
