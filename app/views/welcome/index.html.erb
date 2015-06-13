@@ -1,5 +1,14 @@
 <%= link_to 'Add New', 'titles#new' %>
 
+<script>
+	$(document).mouseup(function (e) {
+	    var container = $(".name");
+	    if (!container.is(e.target) && container.has(e.target).length === 0) {
+	         location.reload();
+	    }
+	});
+</script>
+
 <div class="table">
 	<% @titles.each do |title| %>
 	<div class="cell" style="background:<%= title.color %>">
