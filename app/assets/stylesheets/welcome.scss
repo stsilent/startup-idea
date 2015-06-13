@@ -2,6 +2,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
   body {
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    height: 100%;
+    width: 100%;
     -webkit-animation:fadeIn 0.5s;
             animation:fadeIn 0.5s;
     -webkit-transition:0.25s;
