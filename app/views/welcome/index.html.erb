@@ -1,7 +1,7 @@
 <%= link_to 'Add New', 'titles#new' %>
 
 <script>
-	$(document).bind("touchstart touchend mouseup",function (e) {
+	$(document).bind("touchend mouseup",function (e) {
 	    var container = $(".name");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 	    	$('body').addClass('fadeOut');
@@ -12,7 +12,7 @@
 	});
 </script>
 
-<div class="table">
+<div class="table logos">
 	<% @titles.each do |title| %>
 	<div class="cell" style="background:<%= title.color %>">
 		<%= title.logo.html_safe %>
