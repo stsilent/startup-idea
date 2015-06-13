@@ -15,8 +15,10 @@
 <div class="table logos">
 	<% @titles.each do |title| %>
 	<div class="cell" style="background:<%= title.color %>">
-		<%= title.logo.html_safe %>
-		<a class="name" href="<%= title.url %>" target="_blank"><%= title.name %></a>
+		<div class="double">
+			<%= title.logo.html_safe %>
+			<a class="name" href="<%= title.url %>" target="_blank"><%= title.name %></a>
+		</div>
 	</div>
 	<% end %>
 </div>
