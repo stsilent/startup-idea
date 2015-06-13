@@ -4,7 +4,8 @@
 	$(document).mouseup(function (e) {
 	    var container = $(".name");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	         location.reload();
+	    	$('body').addClass('fadeOut');
+	    	location.reload();
 	    }
 	});
 </script>

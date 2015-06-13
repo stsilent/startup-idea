@@ -2,7 +2,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
   body {
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    animation:fadeIn 0.5s;
+    transition:0.25s;
   }
+  
+  @keyframes fadeIn {
+    from { opacity:0; transform:scale(1.1);}
+  }
+  
+  .fadeOut {
+     opacity:0; transform:scale(0.9);
+  }
+  
+  
 
   .table {
      display:table;
