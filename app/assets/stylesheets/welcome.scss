@@ -28,12 +28,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     color: #fff;
     position: absolute;
     bottom: 0;
-    text-align: left;
     padding: 20px;
     font-size: 4vh;
     text-decoration: none;
     -webkit-transition:0.25s;
     transition:0.25s;
+  }
+  .cell:first-child .name {
+    right: 0;
   }
   .cell a.name:hover {
      opacity:0.5;
