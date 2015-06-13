@@ -5,6 +5,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     position: absolute;
     height: 100%;
     width: 100%;
+    -webkit-font-smoothing: antialiased;
     -webkit-animation:fadeIn 0.5s;
             animation:fadeIn 0.5s;
     -webkit-transition:0.25s;
@@ -91,4 +92,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: middle;
     padding: 20px;
     font-size: 20px;
+  }
+  
+    
+  /* small displays and portrait orientation */
+  @media screen and (max-width: 414px) {
+    .logos, 
+    .logos .cell {
+       display:block;  
+    }
+    
+    .logos .cell {
+       height:50vh;  
+    }
+    
+    .cell:first-child .name {
+       right: inherit;
+    }
   }
