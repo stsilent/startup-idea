@@ -7,6 +7,10 @@ class TitlesController < ApplicationController
     @titles = Title.all
   end
 
+  def random
+    @titles = Title.order("RANDOM()").first
+  end
+
   # GET /titles/1
   # GET /titles/1.json
   def show

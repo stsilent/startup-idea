@@ -1,3 +1,9 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
 <%= link_to 'Add New', 'titles#new' %>
+
+<p>
+	<% @titles.each do |title| %>
+		<%= title.name %>
+	<% end %>
+</p>

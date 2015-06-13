@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'titles/random'
+
   resources :titles
   get 'welcome/index'
 
