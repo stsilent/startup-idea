@@ -3,7 +3,8 @@
 <div class="table">
 	<% @titles.each do |title| %>
 	<div class="cell" style="background:<%= title.color %>">
-		<%= title.logo.html_safe %>  
+		<%= title.logo.html_safe %>
+		<%= title.name %>
 	</div>
 	<% end %>
 </div>
