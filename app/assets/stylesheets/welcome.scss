@@ -39,14 +39,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
      display:table-cell;
      vertical-align:middle;  
      position:relative;
-    -webkit-animation:fadeIn 0.5s;
-            animation:fadeIn 0.5s;
   }
   .cell svg {
      width:50% !important;
      height:auto !important;
      fill:#fff;  
      text-align:center;
+    -webkit-animation:fadeIn 0.5s;
+            animation:fadeIn 0.5s;
   }
   .cell a.name {
     display: block;
