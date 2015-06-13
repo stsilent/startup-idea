@@ -2,7 +2,7 @@
 
 <h1>Listing Titles</h1>
 
-<table>
+<table class="titles">
   <thead>
     <tr>
       <th>Name</th>
@@ -16,13 +16,9 @@
   <tbody>
     <% @titles.each do |title| %>
       <tr>
-        <td><%= title.name %></td>
-        <td><%= title.url %></td>
-        <td><%= title.color %></td>
-        <td><%= title.logo %></td>
-        <td><%= link_to 'Show', title %></td>
-        <td><%= link_to 'Edit', edit_title_path(title) %></td>
-        <td><%= link_to 'Destroy', title, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><a href="<%= title.url %>"><%= title.name %></a>a></td>
+        <td class="logotype" style="background:<%= title.color %>"><%= title.logo.html_safe %></td>
+        <td><%= link_to 'Show', title %> | <%= link_to 'Edit', edit_title_path(title) %> | <%= link_to 'Destroy', title, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
