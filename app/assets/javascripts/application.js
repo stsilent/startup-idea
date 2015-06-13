@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).mouseup(function (e) {
+    var container = $(".name");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+         location.reload();
+    }
+});
