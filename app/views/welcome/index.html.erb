@@ -1,7 +1,7 @@
 <%= link_to 'Add New', 'titles#new' %>
 
 <script>
-	$(document).click(function (e) {
+	$(document).bind("touchstart touchend mouseup",function (e) {
 	    var container = $(".name");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 	    	$('body').addClass('fadeOut');
