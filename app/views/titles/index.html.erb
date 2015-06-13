@@ -16,7 +16,7 @@
   <tbody>
     <% @titles.each do |title| %>
       <tr>
-        <td><a href="<%= title.url %>"><%= title.name %></a>a></td>
+        <td><a href="<%= title.url %>"><%= title.name %></a></td>
         <td class="logotype" style="background:<%= title.color %>"><%= title.logo.html_safe %></td>
         <td><%= link_to 'Show', title %> | <%= link_to 'Edit', edit_title_path(title) %> | <%= link_to 'Destroy', title, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
