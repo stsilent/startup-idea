@@ -16,14 +16,17 @@
 	function getNewStartups() {
 	 	var API = "https://morning-beyond-4046.herokuapp.com/welcome/index.json";
 		$.getJSON( API, {format: "json"}).done(function(data){
+
+			var decoded0 = $('<div/>').html(data.titles[0].logo).text();
+			var decoded1 = $('<div/>').html(data.titles[1].logo).text();
 			
 			$('.logos .cell:eq(0)')
 				.css('background',data.titles[0].color)
-				.find('.double').html(data.titles[0].logo);
+				.find('.double').html(decoded0);
 			
 			$('.logos .cell:eq(1)')
 				.css('background',data.titles[1].color)
-				.find('.double').html(data.titles[1].logo);
+				.find('.double').html(decoded1);
 	   	})
 	}
 </script>
