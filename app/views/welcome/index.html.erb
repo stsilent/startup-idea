@@ -12,13 +12,12 @@
 	});
 
 
-	$.ajax({
-		dataType: "json",
-		url: "https://morning-beyond-4046.herokuapp.com/titles.json",
-		data: window.data,
-		success: function(){
-			console.log(window.data);
-		}
+
+	(function() {
+	 	var API = "https://morning-beyond-4046.herokuapp.com/titles.json";
+		$.getJSON( API, {format: "json"}).done(function( data ) {
+			console.log(data)
+	   	}
 	});
 </script>
 
