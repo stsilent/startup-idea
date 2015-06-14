@@ -55,17 +55,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   .cell a.name {
     display: block;
+    width:100%;
     color: #fff;
     position: absolute;
     bottom: 0;
     padding: 20px;
-    font-size: 4vh;
+    font-size: 20px;
+    letter-spacing: -1px;
     text-decoration: none;
     -webkit-transition:0.25s;
     transition:0.25s;
-  }
-  .cell:first-child .name {
-    right: 0;
   }
   .cell a.name:hover {
      opacity:0.5;
@@ -73,7 +72,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   .amp {
      color:#fff;
-     font-size:30vh;
+     font-size:15vh;
      text-indent:-0.2vh;
   }
   
