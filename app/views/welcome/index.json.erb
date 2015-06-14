@@ -1,0 +1,10 @@
+{
+	<% @titles.each do |title| %>
+		{
+		"name": <%= title.name %>,
+		"color": <%= title.color %>,
+		"url": <%= title.url %>,
+		"logo": <%= title.logo.html_safe %>
+		}
+	<% end %>
+}
