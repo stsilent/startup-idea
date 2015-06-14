@@ -9,6 +9,15 @@
 	    		location.reload();
 	    	},250);
 	    }
+
+	    $.ajax({
+		  dataType: "json",
+		  url: "https://morning-beyond-4046.herokuapp.com/titles.json",
+		  data: data,
+		  success: function(){
+		  	console.log(data);
+		  }
+		});
 	});
 </script>
 
