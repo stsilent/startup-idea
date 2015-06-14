@@ -15,8 +15,11 @@
 
 	$(function() {
 	 	var API = "https://morning-beyond-4046.herokuapp.com/welcome/index.json";
-		$.getJSON( API, {format: "json"}).done(function( data ) {
-			console.log(data.titles[0].url)
+		$.getJSON( API, {format: "json"}).done(function(data){
+			
+			$('.logos .cell:eq(0)')
+				.css('background',data.titles[0].color)
+				.find('.double').html(data.titles[0].image);
 	   	})
 	});
 </script>
