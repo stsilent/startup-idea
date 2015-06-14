@@ -24,7 +24,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
      opacity:0; transform:scale(1.1); -webkit-transform:scale(1.1); 
   }
   
-  
+  .logos {
+    cursor: pointer;
+  }
 
   .table {
      display:table;
@@ -74,7 +76,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   
   .plus {  
-     pointer-events:none;
+    pointer-events:none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   
   .titles .logotype {
