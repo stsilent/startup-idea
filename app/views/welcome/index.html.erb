@@ -7,7 +7,6 @@
 	    	$('body').addClass('fadeOut');
 	    	setTimeout(function(){
 	    		getNewStartups();
-	    		$('body').removeClass('fadeOut');
 	    	},250);
 	    }
 	});
@@ -17,6 +16,8 @@
 	function getNewStartups() {
 	 	var API = "https://morning-beyond-4046.herokuapp.com/welcome/index.json";
 		$.getJSON( API, {format: "json"}).done(function(data){
+
+			$('body').removeClass('fadeOut');
 
 			var decoded0 = $('<div/>').html(data.titles[0].logo).text();
 			var decoded1 = $('<div/>').html(data.titles[1].logo).text();
