@@ -17,11 +17,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   
   @-webkit-keyframes slideIn {
-    from { opacity:0; -webkit-transform:translateY(100%);}
+    from { opacity:0; -webkit-transform:translateY(50%) scale(0.9);}
   }
   
   @keyframes slideIn {
-    from { opacity:0; transform:translateY(100%);}
+    from { opacity:0; transform:translateY(50%) scale(0.9);}
   }
   
   .fadeOut svg,

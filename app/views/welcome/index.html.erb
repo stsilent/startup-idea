@@ -11,6 +11,7 @@
 	  if (e.keyCode == 0 || e.keyCode == 32) {
 	  	askNewStartup();
 	  }
+
 	});
 
 	function askNewStartup(){
@@ -19,8 +20,6 @@
 		    setTimeout(function(){
 				getNewStartups();
 			},250);
-		} else {
-			console.log('stopped');
 		}
 	}
 
