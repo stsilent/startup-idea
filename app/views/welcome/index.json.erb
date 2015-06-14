@@ -1,10 +1,16 @@
 {"titles":[
-	<% @titles.each do |title| %>
+	<% @titles.each_with_index do |title,index| %>
+		<% prefix = ',' %>
+		<% if index==1 
+			prefix = '' 
+		end %>
 		{
+		"index": "<%= index %>", 
 		"name": "<%= title.name %>",
 		"url": "<%= title.url %>",
 		"color": "<%= title.color %>",
 		"logo": "<%= title.logo %>"
-		},
+		}<%= prefix %>
+		
 	<% end %>
 ]}
