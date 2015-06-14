@@ -6,14 +6,14 @@
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 	    	$('body').addClass('fadeOut');
 	    	setTimeout(function(){
-	    		location.reload();
+	    		getNewStartups();
 	    	},250);
 	    }
 	});
 
 
 
-	$(function() {
+	function getNewStartups() {
 	 	var API = "https://morning-beyond-4046.herokuapp.com/welcome/index.json";
 		$.getJSON( API, {format: "json"}).done(function(data){
 			
@@ -21,7 +21,7 @@
 				.css('background',data.titles[0].color)
 				.find('.double').html(data.titles[0].image);
 	   	})
-	});
+	}
 </script>
 
 <div class="table logos">
