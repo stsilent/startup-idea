@@ -44,6 +44,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
      width:100%;
      height:100%;
      text-align:center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   .cell {
      display:table-cell;
@@ -114,10 +118,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
   .plus {  
     pointer-events:none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
   
   .titles .logotype {
