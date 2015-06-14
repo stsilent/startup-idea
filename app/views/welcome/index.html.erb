@@ -4,24 +4,29 @@
 	$(document).bind("touchend mouseup",function (e) {
 	    var container = $(".name");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-	    	$('body').addClass('fadeOut');
-	    	setTimeout(function(){
-	    		getNewStartups();
-	    	},250);
+	    	askNewStartup();
 	    }
 	});
 
 	$(window).keypress(function(e) {
+
 	  if (e.keyCode == 0 || e.keyCode == 32) {
-	    $('body').addClass('fadeOut');
-	    setTimeout(function(){
-			getNewStartups();
-		},250);
+	  	askNewStartup();
 	  }
 	});
 
+	function askNewStartup(){
+		if (!$('body').hasClass('fadeOut')){
+		    $('body').addClass('fadeOut');
+		    setTimeout(function(){
+				getNewStartups();
+			},250);
+		}
+	}
+
 
 	function getNewStartups() {
+
 	 	var API = "https://morning-beyond-4046.herokuapp.com/welcome/index.json";
 		$.getJSON( API, {format: "json"}).done(function(data){
 
