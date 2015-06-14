@@ -16,11 +16,8 @@
 	$(function() {
 	 	var API = "https://morning-beyond-4046.herokuapp.com/welcome/index.json";
 		$.getJSON( API, {format: "json"}).done(function( data ) {
-			console.log(data)
-	   	}).fail(function( jqxhr, textStatus, error ) {
-		    var err = textStatus + ", " + error;
-		    console.log( "Request Failed: " + err );
-		})
+			console.log(data.titles[0].url)
+	   	})
 	});
 </script>
 
