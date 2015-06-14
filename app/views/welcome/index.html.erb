@@ -11,6 +11,14 @@
 	    }
 	});
 
+	$(window).keypress(function(e) {
+	  if (e.keyCode == 0 || e.keyCode == 32) {
+	    $('body').addClass('fadeOut');
+	    setTimeout(function(){
+			getNewStartups();
+		},250);
+	  }
+	});
 
 
 	function getNewStartups() {
