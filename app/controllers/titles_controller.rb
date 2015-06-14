@@ -1,5 +1,6 @@
 class TitlesController < ApplicationController
   before_action :set_title, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
 
   # GET /titles
   # GET /titles.json
@@ -19,6 +20,7 @@ class TitlesController < ApplicationController
   # GET /titles/new
   def new
     #if current_user.try(:admin?)
+      before_action :authenticate_user!
       @title = Title.new
     #end
   end
