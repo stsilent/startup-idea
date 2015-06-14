@@ -87,16 +87,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     -webkit-animation:slideIn 0.5s;
             animation:slideIn 0.5s;
   }
+  .cell a.name:hover {
+     background: none;
+  }
   .cell a.name div {
     position: relative;
     z-index: 10;
     display: inline;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     -webkit-transition:0.25s;
     transition:0.25s;
-  }
-  .cell a.name:hover {
-     background: none;
   }
   .cell a.name:hover div {
     border-bottom: 2px solid rgba(255, 255, 255, 0);
@@ -173,18 +173,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     
   /* small displays and portrait orientation */
   @media screen and (max-width: 414px) {
+    .desktop { display: none; }
+
     .logos{
        display:block;  
     }
     
     .logos .cell {
        display:table;
-       height:50vh;
+       height: calc(50vh - 20px);
        width:100%;
     }
     .logos .cell .double {
        display:table-cell;
        vertical-align:middle;
+    }
+    .cell a.name {
+
     }
     .cell:first-child .name {
        right: inherit;
