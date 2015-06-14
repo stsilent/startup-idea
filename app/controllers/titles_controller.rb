@@ -19,10 +19,7 @@ class TitlesController < ApplicationController
 
   # GET /titles/new
   def new
-    #if current_user.try(:admin?)
-      before_action :authenticate_user!
       @title = Title.new
-    #end
   end
 
   # GET /titles/1/edit
