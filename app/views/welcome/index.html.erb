@@ -15,9 +15,9 @@
 	$.ajax({
 		dataType: "json",
 		url: "https://morning-beyond-4046.herokuapp.com/titles.json",
-		data: data,
+		data: window.data,
 		success: function(){
-			console.log(data);
+			console.log(window.data);
 		}
 	});
 </script>
