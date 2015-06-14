@@ -37,11 +37,11 @@
 			
 			$('.logos .cell:eq(0)')
 				.css('background',data.titles[0].color)
-				.find('.double').html(decoded0);
+				.find('.double').html(decoded0 + '<a href="'+ data.titles[0].url +'" target="_blank">'+data.titles[0].name+'</a>')
 			
 			$('.logos .cell:eq(1)')
 				.css('background',data.titles[1].color)
-				.find('.double').html(decoded1);
+				.find('.double').html(decoded1 + '<a href="'+ data.titles[1].url +'" target="_blank">'+data.titles[1].name+'</a>')
 
 			setTimeout(function(){
 				$('body').removeClass('wait');
