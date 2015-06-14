@@ -13,16 +13,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   
   @-webkit-keyframes fadeIn {
-    from { opacity:0; -webkit-transform:scale(1.1) translateY(20%); transform:scale(1.1) translateY(20%);}
+    from { opacity:0; -webkit-transform:translateY(20%) scale(1.1); transform:translateY(20%) scale(1.1);}
   }
   
   @keyframes fadeIn {
-    from { opacity:0; -webkit-transform:scale(1.1) translateY(20%); transform:scale(1.1) translateY(20%);}
+    from { opacity:0; -webkit-transform:translateY(20%) scale(1.1); transform:translateY(20%) scale(1.1);}
   }
   
   .fadeOut svg {
     transition: 0.25s;
-     opacity:0; transform:scale(0.9) translateY(-10%); -webkit-transform:scale(0.9) translateY(-10%); 
+     opacity:0; transform:translateY(-10%) scale(0.9); -webkit-transform:translateY(-10%) scale(0.9); 
   }
   
   .logos {
