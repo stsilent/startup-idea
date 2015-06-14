@@ -146,9 +146,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     bottom: 0;
     width:100%;
     height: 40px;
-    padding:10px 20px;
+    padding:14px 20px;
     font-size: 12px;
     color: #333;
+    font-weight: 700;
   }
   
     
