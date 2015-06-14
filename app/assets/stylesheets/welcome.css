@@ -77,7 +77,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     -webkit-animation:slideIn 0.5s;
             animation:slideIn 0.5s;
   }
-  .cell a.name {
+  .cell a.name div {
     position: relative;
     z-index: 10;
   }
