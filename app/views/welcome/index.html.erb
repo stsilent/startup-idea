@@ -16,7 +16,7 @@
 	});
 
 	function askNewStartup(){
-		if (!$('body').hasClass('fadeOut')){
+		if (!$('body').hasClass('wait')){
 		    $('body').addClass('fadeOut');
 		    setTimeout(function(){
 				getNewStartups();
@@ -32,7 +32,7 @@
 	 	var API = "https://morning-beyond-4046.herokuapp.com/welcome/index.json";
 		$.getJSON( API, {format: "json"}).done(function(data){
 
-			$('body').removeClass('fadeOut');
+			$('body').removeClass('fadeOut').addClass('wait');
 
 			var decoded0 = $('<div/>').html(data.titles[0].logo).text();
 			var decoded1 = $('<div/>').html(data.titles[1].logo).text();
@@ -44,6 +44,10 @@
 			$('.logos .cell:eq(1)')
 				.css('background',data.titles[1].color)
 				.find('.double').html(decoded1);
+
+			setTimeout(function(){
+				$('body').removeClass('wait');
+			},500)
 	   	})
 	}
 </script>
