@@ -16,7 +16,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     from { opacity:0; -webkit-transform:scale(1.1); transform:scale(1.1);}
   }
   
-  .fadeOut svg {
+  .fadeOut svg,
+  .fadeOut .name {
     transition: 0.25s;
     -webkit-transition: 0.25s;
     opacity:0; transform:scale(0.9); -webkit-transform:scale(0.9); 
@@ -65,6 +66,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     text-decoration: none;
     -webkit-transition:0.25s;
     transition:0.25s;
+    -webkit-animation:fadeIn 0.5s;
+            animation:fadeIn 0.5s;
   }
   .cell a.name:hover {
      opacity:0.5;
