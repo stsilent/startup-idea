@@ -91,7 +91,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     position: relative;
     z-index: 10;
     display: inline;
-    border-bottom: 2px solid 2px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
   }
   .cell a.name:hover {
      background: none;
