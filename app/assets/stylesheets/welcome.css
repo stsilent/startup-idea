@@ -77,6 +77,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     -webkit-animation:slideIn 0.5s;
             animation:slideIn 0.5s;
   }
+  .cell a.name {
+    position: relative;
+    z-index: 10;
+  }
   .cell a.name:hover {
      background: none;
   }
@@ -94,6 +98,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     -webkit-transition:0.25s;
     transition:0.25s;
     opacity: 0;
+    z-index: 5;
   }
   .cell a.name:hover:after{
     opacity: 1;

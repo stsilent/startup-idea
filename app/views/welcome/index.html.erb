@@ -36,11 +36,11 @@
 			
 			$('.logos .cell:eq(0)')
 				.css('background',data.titles[0].color)
-				.find('.double').html(decoded0 + '<a class="name" href="'+ data.titles[0].url +'" target="_blank">'+data.titles[0].name+'</a>')
+				.find('.double').html(decoded0 + '<a class="name" href="'+ data.titles[0].url +'" target="_blank"><div>'+data.titles[0].name+'</div></a>')
 			
 			$('.logos .cell:eq(1)')
 				.css('background',data.titles[1].color)
-				.find('.double').html(decoded1 + '<a class="name" href="'+ data.titles[1].url +'" target="_blank">'+data.titles[1].name+'</a>')
+				.find('.double').html(decoded1 + '<a class="name" href="'+ data.titles[1].url +'" target="_blank"><div>'+data.titles[1].name+'</div></a>')
 
 			setTimeout(function(){
 				$('body').removeClass('wait');
@@ -54,7 +54,7 @@
 	<div class="cell" style="background:<%= title.color %>">
 		<div class="double">
 			<%= title.logo.html_safe %>
-			<a class="name" href="<%= title.url %>" target="_blank"><%= title.name %></a>
+			<a class="name" href="<%= title.url %>" target="_blank"><div><%= title.name %></div></a>
 		</div>
 	</div>
 	<% end %>
