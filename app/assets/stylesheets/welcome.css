@@ -155,10 +155,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     height: 40px;
     padding: 13px 20px;
     font-size: 13px;
+    background: #fff;
     color: #6B6B6B;
     font-weight: 700;
     text-align: center;
-    letter-spacing: -1px;
     z-index: 100;
   }
   .footer a {
@@ -189,9 +189,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
        vertical-align:middle;
     }
     .cell a.name {
-
+      padding: 10px;
+      text-align: left;
+      display: inline;
+      left: 0;
+      font-size: 20px;
     }
     .cell:first-child .name {
-       right: inherit;
+      right: inherit;
+      top: 0;
     }
   }
