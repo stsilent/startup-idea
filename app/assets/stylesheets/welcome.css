@@ -194,9 +194,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       display: inline;
       left: 0;
       font-size: 20px;
-    }
-    .cell:first-child .name {
+      bottom: inherit;
       right: inherit;
-      top: 0;
+      width: auto;
+      top:0;
+    }
+    .cell:last-child .name {
+      right: inherit;
+      bottom: 0;
+      top: inherit;
     }
   }
