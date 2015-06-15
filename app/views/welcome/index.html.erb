@@ -26,7 +26,7 @@
 
 	function getNewStartups() {
 
-	 	var API = "https://morning-beyond-4046.herokuapp.com/welcome/index.json";
+	 	var API = "/welcome/index.json";
 		$.getJSON( API, {format: "json"}).done(function(data){
 
 			$('body').removeClass('fadeOut');
