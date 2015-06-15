@@ -65,6 +65,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .logos .cell {
     transition: 0.5s;
     -webkit-transition: 0.5s;
+    width:50%;
   }
   .cell svg {
      width:50% !important;
