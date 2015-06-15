@@ -172,9 +172,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     opacity: 0.8;
   }
   
+
+  /*   medium displays   */
+  @media screen and (max-width: 800px) {
+
+    .cell a.name {
+      padding: 20px 0;
+      font-size: 20px;
+    }
+  }
+
     
   /* small displays and portrait orientation */
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 480px) {
     .table {
       height: calc(100% - 40px);
     }
