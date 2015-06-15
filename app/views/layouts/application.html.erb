@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Choose Your Next Startup Idea</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="description" content="Brainstorm your next startup idea with this little helper. This tool will help you to find cool spontaneous idea. Peace!">
-  <meta property="og:image" content="<%= image_path("startup-idea.png") %>"/>
-  <link href='//fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Choose Your Next Startup Idea</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<meta property="og:title" content="Choose Your Next Startup Idea" />
+	<meta name="description" content="Brainstorm your next startup idea with this little helper. This tool will help you to find cool spontaneous idea.">
+	<meta property="og:image" content="<%= image_path("startup-idea.png") %>"/>
+	<meta property="og:type" content="website" />
+
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:description" content="Brainstorm your next startup idea with this little helper. This tool will help you to find cool spontaneous idea."/>
+	<meta name="twitter:title" content="Choose Your Next Startup Idea"/>
+	<meta name="twitter:image:src" content="<%= image_path("startup-idea.png") %>"/>
+
+	<link href='//fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
 
 	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-64089345-1', 'auto');
-	  ga('send', 'pageview');
+		ga('create', 'UA-64089345-1', 'auto');
+		ga('send', 'pageview');
 	</script>
 
 </head>
 <body>
 
-<% flash.each do |name, msg| %>
-<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
-<% end %>
+	<% flash.each do |name, msg| %>
+	<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+	<% end %>
 
-<%= yield %>
+	<%= yield %>
 
 </body>
 </html>
