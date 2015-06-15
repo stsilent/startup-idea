@@ -176,7 +176,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   /* small displays and portrait orientation */
   @media screen and (max-width: 414px) {
     .table {
-      height: calc(100vh - 106px);
+      height: calc(100% - 40px);
     }
 
     .desktop { display: none; }
@@ -186,9 +186,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     }
     
     .logos .cell {
-       display:table;
-       height: calc(50vh - 53px);
-       width:100%;
+      display:table;
+      height: calc(50% - 20px);
+      width: 100%;
+      position: fixed;
+    }
+    .logos .cell:last-child{
+      bottom:40px;
+
+    }
+    .logos svg{
+      max-height:100px!important;
     }
     .logos .cell .double {
        display:table-cell;
