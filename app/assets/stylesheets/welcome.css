@@ -69,6 +69,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .cell svg {
      width:50% !important;
      height:auto !important;
+     max-height:30vh!important;
      fill:#fff;  
      text-align:center;
      -webkit-transform: translateZ(0);
@@ -209,7 +210,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
     }
     .logos svg{
-      max-height:100px!important;
+      max-height:15vh!important;
     }
     .logos .cell .double {
        display:table-cell;
