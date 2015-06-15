@@ -68,6 +68,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
      height:auto !important;
      fill:#fff;  
      text-align:center;
+     -webkit-transform: translateZ(0);
+
     -webkit-animation:fadeIn 0.5s;
             animation:fadeIn 0.5s;
   }
@@ -173,6 +175,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     
   /* small displays and portrait orientation */
   @media screen and (max-width: 414px) {
+    .table {
+      height: calc(100vh - 106px);
+    }
+
     .desktop { display: none; }
 
     .logos{
@@ -181,7 +187,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     
     .logos .cell {
        display:table;
-       height: calc(50vh - 20px);
+       height: calc(50vh - 53px);
        width:100%;
     }
     .logos .cell .double {
