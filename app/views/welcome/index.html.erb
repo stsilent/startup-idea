@@ -42,6 +42,8 @@
 				.css('background',data.titles[1].color)
 				.find('.double').html(decoded1 + '<a class="name" href="'+ data.titles[1].url +'" target="_blank"><div>'+data.titles[1].name+'</div></a>')
 
+			$('.logos svg *').attr('fill','#fff');
+
 			setTimeout(function(){
 				$('body').removeClass('wait');
 			},500)
